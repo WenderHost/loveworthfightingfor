@@ -1,0 +1,25 @@
+{
+  "name": "lwff-on-cmsjs",
+  "version": "1.0.0",
+  "description": "The Love Worth Fighting For website implemented in CMS.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwender/cms.js.git"
+  },
+  "author": "Michael Wender",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwender/cms.js/issues"
+  },
+  "homepage": "https://github.com/mwender/cms.js#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.1.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.4.0"
+  }
+}

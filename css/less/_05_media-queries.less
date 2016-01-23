@@ -1,0 +1,46 @@
+.show-mobile{
+	visibility: hidden;
+	display: none;
+}
+
+@media (min-width: 80.0rem) {
+	.navigation-list {
+		margin-right: 0;
+	}
+}
+@media (min-width: 40.0rem) {
+	.header .button {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
+}
+@media (max-width: 40.0rem){
+	.show-mobile{
+		visibility: visible;
+		display: block;
+	}
+	.show-desktop{
+		visibility: hidden;
+		display: none;
+	}
+	.header{
+		.title{
+			background-image: url(../images/love-worth-fighting-for.1000x382.png);
+			height: 140px;
+		}
+		.sub-title{
+			margin-bottom: 0;
+		}
+	}
+	.navigation{
+		.navigation-title{
+			display: none;
+		}
+		.navigation-list{
+			&.float-right{
+				margin: 0;
+				float: none;
+			}
+		}
+	}
+}

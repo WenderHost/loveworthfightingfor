@@ -1,0 +1,17 @@
+{
+  "name": "CMS.js",
+  "description": "The Javascript CMS.",
+  "version": "1.0.0",
+  "homepage": "http://cdmedia.github.io/cms.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdmedia/cms.js"
+  },
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "milligram": "~1.0.3",
+    "sheetrock": "jquery-sheetrock#~1.0.0",
+    "jquery-smooth-scroll": "~1.7.1"
+  }
+}

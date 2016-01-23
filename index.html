@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Love Worth Fighting For Marriage Event</title>
+  <meta name="description" content="Love Worth Fighting For Marriage Event with Kirk Cameron and Warren Barfield">
+  <meta name="author" content="Feed Your Faith">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="bower_components/milligram/dist/milligram.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!-- Main View -->
+  <main class="wrapper">
+    <nav class="navigation">
+      <section class="container">
+        <a href="#" class="navigation-title">Love Worth Fighting For</a>
+        <ul class="navigation-list float-right">
+          <li class="navigation-item"><a href="#about" class="navigation-link">About</a></li>
+          <li class="navigation-item"><a href="#tickets" class="navigation-link">Tickets</a></li>
+          <li class="navigation-item">
+            <a href="#popover-more" class="navigation-link" data-popover>More...</a>
+            <div class="popover" id="popover-more">
+              <ul class="popover-list">
+                <li class="popover-item"><a href="http://twitter.com/feedyourfaith" class="popover-link" target="_blank">Twitter</a></li>
+                <li class="popover-item"><a href="https://www.facebook.com/loveworthfightingfor" class="popover-link" target="_blank">Facebook</a></li>
+                <li class="popover-item"><a href="https://missinginkshop.com/lwffstore/store" class="popover-link" target="_blank">Store</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <header class="header" id="home">
+      <section class="container">
+        <h1 class="title">Love Worth Fighting For</h1>
+        <h2 class="sub-title">featuring <span>Kirk Cameron</span> and special musical guest <span>Warren Barfield</span> in person</h2>
+        <a href="#about" class="button button-large button-clear">Learn More</a> <a href="#tickets" class="button button-large">Get Tickets</a>
+      </section>
+    </header>
+
+    <div class="container">
+      <h3 class="section-title"><a name="about" id="about"></a>About Love Worth Fighting For</h3>
+      <div class="row">
+        <div class="column">
+          <img src="images/audience.800x800.jpg" class="circle aligncenter" />
+          <h5 class="section-title">The Event</h5>
+          <p>The Bible repeatedly uses "father," "husband," "bride" and "child" analogies to demonstrate God's relationship with the church and his followers. There is no better example of the unconditional love God has for us than what we are instructed to have for our spouse and children. Building upon these themes, Love Worth Fighting For is a marriage event, featuring teaching by Kirk Cameron and music by Warren Barfield, designed to strengthen and encourage your marriage.</p>
+        </div>
+        <div class="column">
+        <img src="images/kirk-cameron.800x800.jpg" class="circle aligncenter" />
+          <h5 class="section-title">Kirk Cameron</h5>
+          <p>Kirk is best known for his memorable role of "Mike Seaver", a cultural icon of the 80's, with his mullet hairstyle, cool glasses, and wisecracking comebacks. More recently he enjoyed much success with the #1 grossing inspirational film of 2008, Fireproof, and his recent documentary, Monumental. His production company, CAMFAM Studios, has released his latest films: Unstoppable, Mercy Rule, and Saving Christmas. His speaking tour, Love Worth Fighting For, is a marriage event held in churches and has been hosted in over 150 cities.</p>
+        </div>
+        <div class="column">
+        <img src="images/warren-barfield.800x800.jpg" class="circle aligncenter" />
+          <h5 class="section-title">Warren Barfield</h5>
+          <p>North Carolina-born singer/songwriter Warren Barfield is on a mission to make the truly important things important again in his life. Things like faith, love, marriage, children, truth, and with his songs, he challenges us all to do the same. Martin Luther King Jr. said, "If a man hasn't discovered something that he will die for, he isn't fit to live.” Warren has found those things in his faith, his wife, and his belief in love. “These are the things I would die for; things I will wake up every morning and spend my day fighting for."</p>
+        </div>
+      </div>
+      <div style="max-width: 640px; max-height: 360px; width: 100%; height: 360px; margin: 20px auto 60px;"><iframe style="max-width: 640px; max-height: 360px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/DoI2jCwd168?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+      <h3 class="section-title"><a name="tickets" id="tickets"></a>Tickets for Upcoming Events</h3>
+      <table class="striped show-desktop" id="events-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>City</th>
+            <th>Venue/Host</th>
+            <th>Tickets</th>
+          </tr>
+        </thead>
+        <script id="event-row-template" type="text/x-handlebars-template">
+          <tr class="event-row">
+            <td>{{cells.Date}}</td>
+            <td>{{cells.Start_Time}} - {{cells.End_Time}}</td>
+            <td>{{cells.City}}</td>
+            <td><a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a></td>
+            <td><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></td>
+          </tr>
+        </script>
+      </table>
+      <ul class="striped show-mobile" id="events-list">
+        <script id="event-item-template" type="text/x-handlebars-template">
+          <li>
+            <div class="logo"></div>
+            <h3>{{cells.City}}</h3>
+            <p>{{cells.Date}} ({{cells.Start_Time}} - {{cells.End_Time}})<br />
+              <a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a>
+            </p>
+            <div><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></div>
+          </li>
+        </script>
+      </ul>
+    </div>
+
+    <footer class="cms_footer container">
+      <small class="cms_footer_text">&copy; Copyright 2009 &ndash; 2016. <a href="http://www.feedyourfaith.org">Feed Your Faith</a>. All rights reserved.</small>
+    </footer>
+
+  </main>
+
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="bower_components/sheetrock/dist/sheetrock.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
+  <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
