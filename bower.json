@@ -12,6 +12,7 @@
   "dependencies": {
     "milligram": "~1.0.3",
     "sheetrock": "jquery-sheetrock#~1.0.0",
-    "jquery-smooth-scroll": "~1.7.1"
+    "jquery-smooth-scroll": "~1.7.1",
+    "normalize-css": "~3.0.3"
   }
 }
