@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          'css/style.css': 'css/less/style.less'
+          'assets/css/style.css': 'assets/less/style.less'
         }
       },
       production: {
@@ -24,13 +24,13 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          'css/style.css': 'css/less/style.less'
+          'assets/css/style.css': 'assets/less/style.less'
         }
       }
     },
     watch: {
       less:{
-        files: ['css/less/*.less','index.html','js/*.js'], // which files to watch
+        files: ['assets/less/*.less','index.html','assets/js/*.js'], // which files to watch
         tasks: ['less:development'],
         options: {
           livereload: true
