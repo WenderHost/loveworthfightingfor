@@ -77,24 +77,25 @@
           </tr>
         </thead>
         <script id="event-row-template" type="text/x-handlebars-template">
-          <tr class="event-row">
+          <tr class="event-row event-{{cells.Tickets}}">
             <td>{{cells.Date}}</td>
             <td>{{cells.Start_Time}} - {{cells.End_Time}}</td>
             <td>{{cells.City}}</td>
             <td><a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a></td>
-            <td><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></td>
+            <td><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button buytickets" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a><a class="button soldout button-disabled" title="Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}} is SOLD OUT">SOLD OUT</a></td>
           </tr>
         </script>
       </table>
       <ul class="striped show-mobile" id="events-list">
         <script id="event-item-template" type="text/x-handlebars-template">
-          <li>
+          <li class="event-item event-{{cells.Tickets}}">
             <div class="logo"></div>
             <h3>{{cells.City}}</h3>
             <p>{{cells.Date}} ({{cells.Start_Time}} - {{cells.End_Time}})<br />
               <a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a>
             </p>
-            <div><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></div>
+            <div class="buytickets"><a href="https://www.itickets.com/register/new/{{cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></div>
+            <div class="soldout"><a class="button button-disabled" title="Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}} is SOLD OUT">SOLD OUT</a></div>
           </li>
         </script>
       </ul>

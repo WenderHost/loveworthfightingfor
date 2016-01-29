@@ -43,6 +43,17 @@ table.striped{
 		}
 	}
 }
+.soldout{
+	display: none;
+}
+.event-soldout{
+	.buytickets{
+		display: none;
+	}
+	.soldout{
+		display: inline-block;
+	}
+}
 
 /* Buttons
 // -------------------------------------------------- */
@@ -83,4 +94,10 @@ input[type='submit']{
 	height: 2.8rem;
 	line-height: 2.8rem;
 	padding: 0 1.5rem;
+}
+.button-disabled, .button-disabled:hover{
+	border-color: #666;
+	background-color: #666;
+	color: #fff;
+	cursor: default;
 }
