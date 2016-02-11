@@ -18,10 +18,7 @@ $('#events-table').sheetrock({
 	query: EventQuery,
 	rowTemplate: EventRowTemplate,
 	labels: ['Date','Start_Time','End_Time','City','Host','Map_Link','Tickets'],
-	headersOff: true,
-	callback: function (error, options, response){
-	  console.log(error, options, response);
-	}
+	headersOff: true
 });
 
 // Mobile View
