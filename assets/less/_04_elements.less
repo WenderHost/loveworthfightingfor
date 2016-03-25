@@ -43,16 +43,21 @@ table.striped{
 		}
 	}
 }
+.comingsoon,
 .soldout{
 	display: none;
 }
+.event-comingsoon,
 .event-soldout{
 	.buytickets{
 		display: none;
 	}
-	.soldout{
-		display: inline-block;
-	}
+}
+.event-soldout .soldout{display: inline-block;}
+.event-comingsoon .comingsoon{
+	display: inline-block;
+	background-color: lighten(@lwffred,20%);
+	border-color: lighten(@lwffred,20%);
 }
 
 /* Buttons
