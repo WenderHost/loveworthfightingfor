@@ -31,15 +31,32 @@ module.exports = function(grunt) {
     watch: {
       less:{
         files: ['assets/less/*.less','index.html','assets/js/*.js'], // which files to watch
-        tasks: ['less:development'],
+        tasks: ['less:development','asset_cachebuster'],
         options: {
           livereload: true
+        }
+      }
+    },
+    asset_cachebuster: {
+      options: {
+        buster: Date.now(),
+        ignore: [
+          '//code.jquery.com',
+          '//cdnjs.cloudflare.com',
+          '//html5shiv.googlecode.com',
+          'assets/images/'
+        ],
+        htmlExtension: 'html'
+      },
+      buildindex: {
+        files: {
+          'index.html': ['index.html']
         }
       }
     }
   });
 
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', ['less:production']);
-  grunt.registerTask('builddev', ['less:development']);
+  grunt.registerTask('build', ['less:production','asset_cachebuster']);
+  grunt.registerTask('builddev', ['less:development','asset_cachebuster']);
 };
