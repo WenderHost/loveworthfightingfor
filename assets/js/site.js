@@ -10,7 +10,7 @@ var today = date.yyyymmdd();
 var EventSheet = 'https://docs.google.com/spreadsheets/d/19lC67SDAvkcMeJTn6fvMRR0MzxhTTmOz-WEQu4jwBA0/edit#gid=0';
 var EventRowTemplate = Handlebars.compile( $('#event-row-template').html() );
 var EventItemTemplate = Handlebars.compile( $('#event-item-template').html() );
-var EventQuery = "SELECT B,C,D,E,F,H,I WHERE J='publish' AND K >= '" + today + "' ORDER BY A ASC";
+var EventQuery = "SELECT B,C,D,E,F,G,H,I WHERE J='publish' AND K >= '" + today + "' ORDER BY A ASC";
 
 Handlebars.registerHelper('ticketlink', function(object){
 	if( object.startsWith('http') ){
@@ -19,6 +19,14 @@ Handlebars.registerHelper('ticketlink', function(object){
 		);
 	} else {
 		return 'https://www.itickets.com/register/new/' + object;
+	}
+});
+
+Handlebars.registerHelper('maplink', function(object){
+	if( object.Venue_Address.startsWith( 'http' ) ){
+		return new Handlebars.SafeString(object.Venue_Address);
+	} else {
+		return object.Map_Link;
 	}
 });
 

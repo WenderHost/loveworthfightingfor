@@ -81,7 +81,7 @@
             <td>{{cells.Date}}</td>
             <td>{{cells.Start_Time}} - {{cells.End_Time}}</td>
             <td>{{cells.City}}</td>
-            <td><a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a></td>
+            <td><a href="{{maplink cells}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a></td>
             <td><a href="{{ticketlink cells.Tickets}}" class="button buytickets" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a><a class="button soldout button-disabled" title="Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}} is SOLD OUT">SOLD OUT</a><span class="button comingsoon">Coming Soon!</span></td>
           </tr>
         </script>
@@ -92,7 +92,7 @@
             <div class="logo"></div>
             <h3>{{cells.City}}</h3>
             <p>{{cells.Date}} ({{cells.Start_Time}} - {{cells.End_Time}})<br />
-              <a href="{{cells.Map_Link}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a>
+              <a href="{{maplink cells}}" target="_blank" title="View on Google Maps">{{cells.Host}}</a>
             </p>
             <div class="buytickets"><a href="{{ticketlink cells.Tickets}}" class="button" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a></div>
             <div class="soldout"><a class="button button-disabled" title="Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}} is SOLD OUT">SOLD OUT</a></div>
