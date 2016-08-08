@@ -85,6 +85,14 @@
             <td><a href="{{ticketlink cells.Tickets}}" class="button buytickets" target="_blank" title="Buy Tickets for Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}}">Buy Tickets</a><a class="button soldout button-disabled" title="Love Worth Fighting For Marriage Event in {{cells.City}} on {{cells.Date}} is SOLD OUT">SOLD OUT</a><span class="button comingsoon">Coming Soon!</span></td>
           </tr>
         </script>
+        <noscript>
+          <tr class="event-row">
+            <td colspan="5" style="padding: 40px 40px 20px 40px; text-align: center;">
+              <h3>Turn on javascript to see tickets</h3>
+              <p>We're unable to display ticketing options because javascript is turned off in your browser. Please turn it on, and reload this page.</p>
+            </td>
+          </tr>
+        </noscript>
       </table>
       <ul class="striped show-mobile" id="events-list">
         <script id="event-item-template" type="text/x-handlebars-template">
