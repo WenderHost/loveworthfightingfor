@@ -497,6 +497,8 @@
       }
 
     } catch (error) {
+      console.log('[Sheetrock] Error object:');
+      console.log( error );
       handleError('Unexpected API response format.', options, response);
     }
 
