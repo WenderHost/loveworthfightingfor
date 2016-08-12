@@ -1,3 +1,7 @@
+/**
+ * startsWith polyfill for IE compatiblity
+ * see: [Code not running in IE 11, works fine in Chrome](http://stackoverflow.com/questions/30867172/code-not-running-in-ie-11-works-fine-in-chrome)
+ */
 if (!String.prototype.startsWith) {
   String.prototype.startsWith = function(searchString, position) {
     position = position || 0;
