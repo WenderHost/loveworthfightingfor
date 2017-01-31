@@ -7,3 +7,4 @@ release.zip
 dev/*
 assets/css/style.css
 *.sublime-*
+assets/css/*.map

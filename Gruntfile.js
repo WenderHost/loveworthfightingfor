@@ -8,7 +8,12 @@ module.exports = function(grunt) {
           compress: false,
           cleancss: false,
           optimization: 2,
-          relativeUrls: true
+          relativeUrls: true,
+          sourceMap: true,
+          sourceMapFilename: 'assets/css/style.css.map',
+          sourceMapBasepath: 'assets/less',
+          sourceMapURL: 'style.css.map',
+          sourceMapRootpath: '../../assets/less'
         },
         files: {
           // target.css file: source.less file
@@ -31,7 +36,7 @@ module.exports = function(grunt) {
     watch: {
       less:{
         files: ['assets/less/*.less','index.html','assets/js/*.js'], // which files to watch
-        tasks: ['less:development','asset_cachebuster'],
+        tasks: ['less:development'],
         options: {
           livereload: true
         }
